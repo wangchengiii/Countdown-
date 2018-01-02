@@ -1,0 +1,146 @@
+html{
+	background: url(./images/6.jpg) repeat-y center;
+	height: 100%;
+}
+body{
+	text-align: center;
+}
+.box{
+	margin:150px auto;
+	width: 400px;
+	height: 260px;
+	border:1px solid red;
+	z-index:100;
+}
+.wrap{
+	position: absolute;
+	width:350px;
+	height:100%;
+	z-index:101;
+	display: none;
+}
+.text{
+	font-weight: 700;
+	font-size: 3em;
+	font-family: 楷体;
+	letter-spacing: 1em;
+	margin-left: 30px;
+}
+.shows{
+	position: relative;
+	border:1px solid black;
+	margin: 50px auto;
+	width: 350px;
+	height: 100px;
+	display: flex;
+	min-height: 100px;
+	align-items: center; 
+　　justify-content: center;
+}
+.but{
+	/*border:1px solid black;*/
+	margin: -40px auto;
+}
+.btn{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 40px;
+	width: 120px;
+	font-size: 20px;
+	background-color: #ccc;
+	font-family:楷体;
+	color:#333;
+	font-weight: 600;
+	cursor:pointer;
+}
+.btn:hover{
+	background-color: #aaa;
+}
+.colon{
+	flex-basis: 10px;
+	margin: 10px 1px;
+	font-weight: 700;
+	font-size: 5em;
+/*border:1px solid red;*/
+}
+.hour,.minute,.second {
+	position: relative;
+	/*flex-basis: 20px;*/
+	margin: 10px 3px;
+	height: 47px;
+	/*border-radius: 5px;*/
+	border-left:1px solid black;
+	border-right:1px solid black;
+	font-weight: 700;
+	font-size: 4em;
+	display: flex;
+	align-items: center; 
+　　justify-content: center;
+}
+.hour{
+	
+}
+.minute{
+	
+}
+.second{
+	
+}
+.minsecond{
+	flex-basis: 40px;
+	border-radius: 5px;
+	margin: 50px 5px 15px 5px;
+	line-height: 1em;
+	border:2px solid black;
+	font-weight: 500;
+	font-size: 2em;
+	display: flex;
+	align-items: center; 
+　　justify-content: center;
+}
+.up,.down{
+	position: absolute;
+	border:1px solid black;
+	width:65.5px;
+	height:12px;
+	background-color: #111;
+	margin-left: -1px;
+}
+.up{
+	border-radius: 5px 5px 0 0;
+}
+.down{
+	margin-top: 60px;
+	border-radius:0 0 5px 5px ;
+}
+.triangle-up,.triangle-down{
+	width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    margin: 0 auto;
+}
+.triangle-up{
+    border-bottom: 12px solid white;
+}
+.triangle-down{
+    border-top: 12px solid white;
+}
+.up-down1{
+	clear:both;
+	position: absolute;
+	top: 13%;
+	left: 1.2%;
+}
+.up-down2{
+	clear:both;
+	position: absolute;
+	top: 13%;
+	left: 34.6%;
+}
+.up-down3{
+	clear:both;
+	position: absolute;
+	top: 13%;
+	left: 68%;
+}

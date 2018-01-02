@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>可调倒计时</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"/>
+
+	<!-- 外部的一些样式和动作等 -->
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="./countdown.css">
+	<script type="text/javascript" src="./countdown.js"></script>
+</head>
+<body>
+<div class="box">
+	<div class="text">
+		倒计时
+	</div>
+	<div class="shows">
+		<div class="wrap" id="wrap"></div>
+
+		<div class="hour" id="hour">
+			00
+		</div>
+		<div class="up-down1">
+			<div class="up" onclick="addHour()">
+				<div class="triangle-up">	
+				</div>
+			</div>
+			<div class="down" onclick="subHour()" id="down_hour">
+				<div class="triangle-down">	
+				</div>
+			</div>
+		</div>
+		
+		<div class="colon">
+			:
+		</div>
+		<div class="minute" id="minute">
+			00
+		</div>
+		<div class="up-down2">
+			<div class="up" onclick="addMinute()" id="up_minute">
+				<div class="triangle-up">
+				</div>
+			</div>
+			<div class="down" onclick="subMinute()" id="down_minute">
+				<div class="triangle-down">	
+				</div>
+			</div>
+		</div>
+		
+		<div class="colon">
+			:
+		</div>
+		<div class="second" id="second">
+			00
+		</div>
+		<div class="up-down3">
+			<div class="up" onclick="addSecond()" id="up_second">
+				<div class="triangle-up">	
+				</div>
+			</div>
+			<div class="down" onclick="subSecond()" id="down_second">
+				<div class="triangle-down">	
+				</div>
+			</div>
+		</div>
+		<div class="minsecond" id="minsecond">
+			00
+		</div>
+	</div>
+	<div class="but">
+		<p>
+  			<button type="button" class="btn" onclick="starts()" id="start">开始倒数</button>
+  			<button type="button" class="btn" onclick="reset()">重置</button>
+		</p>
+	</div>
+</div>
+</body>
+</html>
